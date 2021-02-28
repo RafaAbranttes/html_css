@@ -19,14 +19,14 @@ html, body{
 }
 
 .center{
-    width: 1200px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 2%;
 }
 
 .header{
-    min-width: 1200px;
     width: 100%;
+    padding:0 2%;
     height: 60px;
     background-color: #212343;
 }
@@ -36,7 +36,7 @@ html, body{
 }
 
 .container-banner{
-    min-width: 1200px;
+    padding: 0 2%;
     width: 100%;
     height: 557px;
     background-image: url('../images/header_bg.png');
@@ -45,15 +45,14 @@ html, body{
 }
 
 .container-banner > .center{
-    height: 100%;
-    text-align: right;
+    height: 100%;  
 }
 
 .form{
     padding: 30px;
     width: 400px;
     height: calc(100% + 30px);
-    display: inline-block;
+    float: right;
     position: relative;
     top: -15px;
     border-width: 12px;
@@ -115,7 +114,7 @@ html, body{
 .container-list{
     padding: 30px;
     float: left;
-    width: 620px;
+    width: 50%;
     height: 270px;
     background-color: rgba(33, 35, 67, 0.7);
     margin-top: 40px;
@@ -127,13 +126,16 @@ html, body{
 }
 
 .container-list li{
+    text-align: center;
+}
+
+.container-list li{
     margin-top: 18px;
     color: white;
 }
 
 .container-2 {
-    min-width: 1200px;
-    padding: 40px 0;
+    padding: 40px 2%;
     background-color: #DDDDDD;
     text-align: center;
 }
@@ -143,7 +145,8 @@ html, body{
 }
 
 .container-2 p{
-    width: 698px;
+    width: 100%;
+    max-width: 768px;
     display: inline-block;
     text-align: justify;
     margin: 15px 0;
@@ -160,8 +163,7 @@ html, body{
     background-size: 100% 100%;
 }
 .section-1{
-    min-width: 1200px;
-    padding: 90px 0;
+    padding: 90px 2%;
 }
 
 .section-1 h2{
@@ -204,4 +206,81 @@ html, body{
 
 .footer p{
     margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px){
+    .header{
+        height: 60px;
+        width: 100%;
+        padding: 19px 0%;
+        text-align: center;
+    }
+
+    .header img{
+        margin: 0px;
+    }
+
+    .container-list{
+        padding: 30px 0;
+        float: none;
+        width: 50%;
+        max-width: 500px;
+        float: left;
+        display: inline-block;
+        height: auto;
+    }
+
+    .container-list li{
+        text-align: center;
+    }
+
+    .container-banner{
+        padding: 30px 2%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .form{
+        max-width: 400px;
+        padding: 10px;
+        width: 50%;
+        float: right;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .container-2{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .container-list{
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 80%;
+    }
+
+    .form{
+        float: none;
+        display: inline-block;
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .container-single{
+        float: none;
+        width: 100%;
+        max-width: 600px;
+        padding: 30px 0;
+        display: inline-block;
+    }
+
+    .footer{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
 }
