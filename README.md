@@ -1,3 +1,3 @@
 ## Projeto HTML/CSS
 
-* Estudo do curso fullstack da DankiCode.
+* Projetos de estudo do Curso da DankiCode
